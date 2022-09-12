@@ -1,0 +1,18 @@
+
+nohup python main.py -q 37 --GPU 0,1,2,3 -r 7 --lr 1e-4 --PB --bs 64  --ps 128  --model ./model/STO_OTA_R7_P128_YUV108F_LDP_37.pth >./log/STO_OTA_R7_P128_YUV108F_LDP_37.log &
+nohup python main.py -q 37 --GPU 4,5,6,7 -r 7 --lr 1e-4 --PB --bs 64  --ps 128  --model ./model/STO_MGO_R7_P128_YUV108F_LDP_37.pth >./log/STO_MGO_R7_P128_YUV108F_LDP_37.log &
+
+
+SO_MGO
+
+
+nohup python main.py -q 37 --GPU 4,5,6,7 -r 7 --lr 1e-4 --PB --bs 64  --ps 128  --model ./model/SO_MGO_R7_P128_YUV108F_LDP_37.pth >./log/SO_MGO_R7_P128_YUV108F_LDP_37.log &
+nohup python main.py -q 37 --GPU 0,1,2,3 -r 7 --lr 1e-4 --PB --bs 64  --ps 128  --model ./model/TO_MGO_R7_P128_YUV108F_LDP_37.pth >./log/TO_MGO_R7_P128_YUV108F_LDP_37.log &
+
+nohup python main.py -q 37 --GPU 4,5,6,7 -r 5 --lr 1e-4 --PB --bs 64  --ps 128  --model ./model/STO_MGO_R5_P128_YUV108F_LDP_37.pth >./log/STO_MGO_R5_P128_YUV108F_LDP_37.log &
+nohup python main.py -q 37 --GPU 0,1,2,3 -r 3 --lr 1e-4 --PB --bs 64  --ps 128  --model ./model/STO_MGO_R3_P128_YUV108F_LDP_37.pth >./log/STO_MGO_R3_P128_YUV108F_LDP_37.log &
+
+
+
+nohup python main.py -q 37 --GPU 4,5,6,7 -r 7 --lr 1e-4 --PB --bs 64  --ps 128  --model ./model/STO_OTA_v1_R7_P128_YUV108F_LDP_37.pth >./log/STO_OTA_v1_R7_P128_YUV108F_LDP_37.log &
+nohup python main.py -q 37 --GPU 0,1,2,3 -r 7 --lr 1e-4 --PB --bs 64  --ps 128  --model ./model/STO_OTA_v1_MGO_R7_P128_YUV108F_LDP_37.pth >./log/STO_OTA_v1_MGO_R7_P128_YUV108F_LDP_37.log &
